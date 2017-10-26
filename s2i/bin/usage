@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cat <<EOF
+This is a STI python centos base image:
+To use it, install STI: https://github.com/openshift/source-to-image
+
+Sample invocation:
+
+You can then run the resulting image via:
+docker run -p 5000:5000 flask-app
+EOF
