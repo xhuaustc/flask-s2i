@@ -8,7 +8,7 @@ pipeline {
             sh 'echo "test"'
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sh 'echo "test2"'
           }
@@ -18,6 +18,7 @@ pipeline {
     stage('ci') {
       steps {
         sh 'echo "ci"'
+        fileExists 'test'
       }
     }
     stage('done') {
